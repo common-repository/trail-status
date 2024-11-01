@@ -1,0 +1,224 @@
+/** Style Sheet
+ * @Package			com.onthegridwebdesign.trailstatus2
+ * @File				trail-status.css
+ * @Author			Chris Hood (http://onthegridwebdesign.com)
+ * @Link				http://onthegridwebdesign.com/software/trail-status
+ * @copyright		(c) 2015-2022, On the Grid Web Design LLC
+ * @created			11/12/15
+*/
+
+/*** General ***/
+.otgts2_success, .otgts2_error, .otgts2_warning, .otgts2_message {
+	display: block;
+	margin: 12px -10px;
+	padding: 7px 35px;
+	color: #111111;
+	font-weight: bold;
+}
+.otgts2_success {
+	background-color: #55ee55;
+	border-bottom: solid 2px #007700;
+}
+.otgts2_error {
+	background-color: #ee5555;
+	border-bottom: solid 2px #770000;
+}
+.otgts2_warning {
+	background-color: #eeee55;
+	border-bottom: solid 2px #777700;
+}
+.otgts2_message {
+	background-color: #5555ee;
+	border-bottom: solid 2px #000077;
+	color: #f6f6f6;
+}
+
+.otgts2_box_shadow {
+	box-shadow: 3px 3px 3px #777;
+}
+
+/*** Shortcodes ***/
+table.otgts2_sc {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.otgts2_sc td {
+	border: none;
+}
+tr.otgts2_sc_trail {
+	margin: 0;
+	padding: 10px 7px 0px 7px;
+}
+.otgts2_sc_title {
+	padding: 0 5px 0;
+	text-align: right;
+	font-weight: bold;
+}
+.otgts2_sc_status {
+	font-weight: bold;
+}
+
+.otgts2_sc_trail_img {
+	width: 150px;
+	margin-bottom: 7px;
+	text-align: center;
+}
+.otgts2_sc_trail_img img {
+	width: 100%;
+	padding: 0;
+}
+.otgts2_sc_sm_trail_img {
+	width: 50px;
+	text-align: center;
+}
+.otgts2_sc_sm_trail_img img {
+	width: 100%;
+	padding: 0;
+}
+
+.otgts2_scb {
+	display: inline-block;
+	vertical-align: top;
+	margin: 7px 12px;
+	padding: 7px;
+	text-align: center;
+	font-weight: bold;
+}
+.otgts2_scb .otgts2_sc_trail_img {
+	margin-bottom: 7px;
+}
+
+/*** Admin ***/
+.otgts2_adminmain {
+	display: inline-block;
+	vertical-align: top;
+}
+.otgts2_about {
+	position: sticky;
+	float: right;
+	max-width: 250px;
+	padding: 9px 17px 9px 31px;
+}
+@media screen and (max-width: 800px) {
+	.otgts2_about {	
+		position: inherit;
+		float: none;
+		display: block;
+		padding: 9px 12px;
+	}
+}
+
+.otgts2_trail_name {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 120px;
+	padding: 3px 9px;
+	text-align: right;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.otgts2_trail_status_l {
+	display: inline-block;
+	min-width: 70px;
+}
+.otgts2_list tbody tr:hover {
+	background: #ddd;
+}
+
+.otgts2_list tbody img {
+	width: 50px;
+	height: 50px;
+	box-shadow: 2px 2px 2px #777;
+}
+
+/***** Forms *****/
+.otgts2_form1 label {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	padding: 0 6px;
+	text-align: right;
+	font-weight: bold;
+}
+.otgts2_form1 input[type=text], .otgts2_form1 input[type=email], .otgts2_form1 input[type=phone], .otgts2_form1 input[type=password], .otgts2_form1 select {
+	width: 300px;
+	padding: 3px 5px;
+	border-radius: 3px;
+	background: #ddd;
+}
+.otgts2_form1 textarea {
+	width: 400px;
+	height: 200px;
+	padding: 3px 5px;
+	border-radius: 3px;
+	background: #ddd;
+}
+.otgts2_radio_left {
+	width: auto;
+	padding: 0 0 0 17px;
+	font-weight: normal;
+}
+.otgts2_radio_right {
+	width: auto;
+	padding: 0 0 0 17px;
+	font-weight: normal;
+}
+
+.otgts2_intable_button {
+	margin: 0 12px;
+}
+
+[id*='otgts2_inline_edit'] {
+	display: none;
+}
+
+.otgts2_widget_form input[type=text] {
+	width: 100%;
+}
+
+/*** Datatables ***/
+.otgts2_table1 {
+	margin: 7px 10px 12px;
+	border-collapse: collapse;
+}
+
+.otgts2_table1 thead {
+	background-color: #4c4c4c;
+	background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+	text-align: center;
+	color: #eee;
+}
+.otgts2_table1 th {
+	padding: 6px 12px;
+}
+.otgts2_table1 th a {
+	color: #fff;
+}
+
+.otgts2_table1 td {
+	margin: 0;
+	padding: 5px 12px;
+	text-align: center;
+}
+.otgts2_table1 .even {
+	background-color: #aaa;
+}
+.otgts2_table1 .odd {
+	background-color: #ddd;
+}
+.otgts2_table1 .odd:hover, .table1 .even:hover {
+	background: #fff;
+}
+.dataTables_filter {
+	margin-bottom: 7px;	
+}
+.dataTables_filter input {
+	background-color: white !important;
+}
+.dataTables_length select {
+	min-width: 75px;
+	background-color: white !important;
+}
